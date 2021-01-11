@@ -1,6 +1,6 @@
 <h1>Friends List</h1>
 List of friends:<br>
-<table>
+<table class="table table-bordered" >
   <tr>
     <th>
 Friend Name
@@ -14,3 +14,5 @@ Friend Name
 </tr>
   
 </table>
+<input [(ngModel)]="newfriend" type=text [disabled]="isDisabled">
+<button (click)="addFriend()">Submit</button>
